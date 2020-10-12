@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block content %} {% comment %}
+<h1>Hello Shivam, Django</h1> {% endcomment %} 
+
+<table class="highlight centered responsive-table table-bordered">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{movie.title}}</td>
+            <td>{{movie.genre}}</td>
+            <td>{{movie.number_in_stock}}</td>
+        </tr>
+
+    </tbody>
+</table>
+
+{% endblock %}
